@@ -1,0 +1,11 @@
+{
+  "name": "random-number-drawer",
+  "version": "1.0.0",
+  "description": "Random number drawer application",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
