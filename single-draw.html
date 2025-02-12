@@ -89,6 +89,13 @@
                 result.style.animation = 'none';
                 result.offsetHeight; // Trigger reflow
                 result.style.animation = null;
+                if (localStorage.getItem('randomNumberDrawRecord') == null) {
+                    localStorage.setItem('randomNumberDrawRecord', JSON.stringify([drawnNumber]));
+                } else {
+                    const storedNumbers = JSON.parse(localStorage.getItem('randomNumberDrawRecord'));
+                    storedNumbers.push(drawnNumber);
+                    localStorage.setItem('randomNumberDrawRecord', JSON.stringify(storedNumbers));
+                }
             } else {
                 alert('Please add some numbers first!');
             }

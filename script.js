@@ -73,6 +73,13 @@ $(document).ready(function () {
         //remove the local storage
         localStorage.removeItem('numbers');
     }
+
+    if (localStorage.getItem('randomNumberDrawRecord') != null) {
+        var record = JSON.parse(localStorage.getItem('randomNumberDrawRecord'));
+        record.forEach(function (number, index) {
+            $('#excludeNumbers').val($('#excludeNumbers').val() + number + (index === record.length - 1 ? '' : ', '));
+        });
+    }
 });
 
 // Add this to your existing script.js
