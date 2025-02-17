@@ -80,6 +80,12 @@ $(document).ready(function () {
             $('#excludeNumbers').val($('#excludeNumbers').val() + number + (index === record.length - 1 ? '' : ', '));
         });
     }
+
+    $("#minRange").val(1);
+
+    $('#clearBtn').click(function () {
+        $('#excludeNumbers').val('');
+    });
 });
 
 // Add this to your existing script.js
