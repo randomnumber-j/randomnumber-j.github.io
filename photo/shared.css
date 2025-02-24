@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #6366f1;
+  --primary-gradient: linear-gradient(135deg, #6366f1, #8b5cf6);
+  --background-dark: #0f172a;
+  --background-light: #f8fafc;
+  --glass-dark: rgba(30, 41, 59, 0.7);
+  --glass-light: rgba(255, 255, 255, 0.7);
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-dark: rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="dark"] {
+  --background: var(--background-dark);
+  --glass: var(--glass-dark);
+  --border: var(--border-light);
+  --text: #f1f5f9;
+  --text-secondary: #94a3b8;
+}
+
+[data-bs-theme="light"] {
+  --background: var(--background-light);
+  --glass: var(--glass-light);
+  --border: var(--border-dark);
+  --text: #0f172a;
+  --text-secondary: #475569;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+  min-height: 100vh;
+  background-image: radial-gradient(
+      at 40% 20%,
+      rgba(99, 102, 241, 0.15) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(99, 102, 241, 0.15) 0px, transparent 50%);
+  background-attachment: fixed;
+  transition: all 0.3s ease;
+}
+
+.glass-container {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+}
+
+.theme-toggle {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.75rem;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
