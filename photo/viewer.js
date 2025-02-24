@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Define the number of images for each directory
     const directoryImageCounts = {};
     for (let i = 1; i <= 79; i++) {   //change this when adding more directories
-        directoryImageCounts[i] = 20;
+        directoryImageCounts[i] = 12;
     }
 
     directoryTitle.textContent = `${selectedDirectory}`;
