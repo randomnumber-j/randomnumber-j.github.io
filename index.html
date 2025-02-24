@@ -1,79 +1,12 @@
 <!DOCTYPE html>
-<html id="html" lang="en" data-bs-theme="light">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Number Drawer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="darkModeControl.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Title</title>
 </head>
-
 <body>
-    <div class="bg-shapes">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
-
-    <h1 class="app-title">Random Number Generator</h1>
-
-    <div class="app-container">
-        <form id="drawForm">
-            <div class="input-group">
-                <i class="fas fa-arrow-down"></i>
-                <input type="number" id="minRange" required>
-                <label for="minRange">Minimum Range</label>
-            </div>
-
-            <div class="input-group">
-                <i class="fas fa-arrow-up"></i>
-                <input type="number" id="maxRange" required>
-                <label for="maxRange">Maximum Range</label>
-            </div>
-
-            <div class="input-group">
-                <i class="fas fa-ban"></i>
-                <input type="text" id="excludeNumbers">
-                <label for="excludeNumbers">Numbers to Exclude</label>
-            </div>
-
-            <div class="input-group">
-                <i class="fas fa-dice"></i>
-                <input type="number" id="drawCount" min="1" required>
-                <label for="drawCount">Number of Draws</label>
-            </div>
-
-            <button type="submit" class="btn">Generate Numbers</button>
-        </form>
-
-        <div class="result-section">
-            <h3>Generated Numbers</h3>
-            <div id="drawnNumbers" class="drawn-numbers"></div>
-        </div>
-
-        <!-- Add this button -->
-        <button type="button" class="btn btn-outline mt-4" id="goSingleBtn">
-            <i class="fas fa-random"></i>
-            Switch to Single Draw
-        </button>
-        <!-- Clear Button -->
-        <button type="button" class="btn btn-outline mt-4" id="clearBtn">
-            <i class="fas fa-trash"></i>
-            Clear
-        </button>
-    </div>
-
-    <script src="script.js"></script>
+<script>
+    location.href = './number/index.html';
+</script>
 </body>
-
 </html>
