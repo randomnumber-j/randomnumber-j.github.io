@@ -103,6 +103,37 @@ video.media-content {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.instagram-btn {
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.instagram-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-btn .bi-instagram {
+  margin-right: 6px;
+  font-size: 1rem;
+}
+
+/* Add these if using dark theme */
+[data-bs-theme="dark"] .instagram-btn {
+  background: transparent;
+  border-color: #6c757d;
+  color: #dee2e6;
+}
+
+[data-bs-theme="dark"] .instagram-btn:hover {
+  background: #6c757d;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .image-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

@@ -81,8 +81,83 @@ h1 {
   color: var(--text);
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.controls-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.controls .form-control,
+.controls .form-select {
+  width: 120px;
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  color: var(--bs-body-color);
+  transition: all 0.3s ease;
+}
+
+.controls .form-control:hover,
+.controls .form-select:hover {
+  border-color: var(--bs-primary);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.controls .form-control:focus,
+.controls .form-select:focus {
+  background: var(--glass);
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 0 3px rgba(var(--bs-primary-rgb), 0.25);
+  transform: translateY(-2px);
+}
+
+.controls .form-control::placeholder {
+  color: var(--bs-body-color);
+  opacity: 0.5;
+}
+
 @media (max-width: 768px) {
   .directory-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .controls-row {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .controls .form-control,
+  .controls .form-select {
+    width: 120px;
+  }
+
+  .controls .row {
+    flex-direction: column;
+  }
+
+  .controls .form-control,
+  .controls .form-select {
+    width: 100%;
+    min-width: unset;
   }
 }

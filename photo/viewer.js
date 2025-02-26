@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Update the Instagram URLs mapping
+    const instagramUrls = {
+        '1': 'https://www.instagram.com/p/CZOoKc-Pqzy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '2': 'https://www.instagram.com/p/CW0UJUaPr91/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '3': 'https://www.instagram.com/p/CpPzDSdSdf7/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '4': 'https://www.instagram.com/p/Crs9AeySnUq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '5': 'https://www.instagram.com/p/Cm32NlAS2L8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '6': 'https://www.instagram.com/p/Cq5YIf4yP-9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '7': 'https://www.instagram.com/p/Comnc0MStpj/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '8': 'https://www.instagram.com/p/CWBLRh9P3gH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '9': 'https://www.instagram.com/p/CvGA4iUy-Sc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '10': 'https://www.instagram.com/p/Cud3uyRyatF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+
+        // Add more mappings for each directory number
+    };
+
     // Add back button handling at the start
     const backButton = document.querySelector('.back-button');
     const viewerSource = localStorage.getItem('viewerSource');
@@ -35,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define the number of images for each directory
     const directoryImageCounts = {};
-    for (let i = 1; i <= 79; i++) {   //change this when adding more directories
+    for (let i = 1; i <= 80; i++) {   //change this when adding more directories
         directoryImageCounts[i] = 12;
     }
 
@@ -129,4 +145,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         imageGrid.appendChild(card);
     });
+
+    // Update Instagram link (modify this section)
+    const instagramLink = document.getElementById('instagramLink');
+    if (instagramUrls[selectedDirectory]) {
+        instagramLink.href = instagramUrls[selectedDirectory];
+        instagramLink.style.display = 'block'; // Changed from 'inline-block' to 'block'
+    } else {
+        console.log('No Instagram URL found for directory:', selectedDirectory);
+        instagramLink.style.display = 'none';
+    }
 });

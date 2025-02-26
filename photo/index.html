@@ -16,10 +16,20 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Photo Directories</h1>
-            <button class="theme-toggle" id="themeToggle">
-                <i class="bi bi-moon-stars"></i>
-            </button>
+            <div class="header-left">
+                <h1>Photo Directories</h1>
+            </div>
+            <div class="controls-row">
+                <input type="text" id="searchInput" class="form-control" placeholder="Search...">
+                <select id="sortSelect" class="form-select">
+                    <option value="default">Default</option>
+                    <option value="asc">Low to High</option>
+                    <option value="desc">High to Low</option>
+                </select>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="bi bi-moon-stars"></i>
+                </button>
+            </div>
         </div>
         <div class="directory-grid" id="directoryGrid">
             <!-- Directories will be populated here with this structure:
