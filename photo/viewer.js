@@ -11,7 +11,26 @@ document.addEventListener('DOMContentLoaded', () => {
         '8': 'https://www.instagram.com/p/CWBLRh9P3gH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
         '9': 'https://www.instagram.com/p/CvGA4iUy-Sc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
         '10': 'https://www.instagram.com/p/Cud3uyRyatF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-
+        '11': 'https://www.instagram.com/p/CuvB958SKMr/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '12': 'https://www.instagram.com/reel/CvGlJ8Ju365/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '13': 'https://www.instagram.com/p/CvLUf4PyhNT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '14': 'https://www.instagram.com/p/CqafjeNSsQs/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '15': 'https://www.instagram.com/p/Cz6EtqiSFHr/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '16': 'https://www.instagram.com/p/C0BdOkvLoP_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '17': 'https://www.instagram.com/p/C0OzCCWShoG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '18': 'https://www.instagram.com/p/C1RuR-jyuIX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '19': 'https://www.instagram.com/p/Cg1Oeh8LlKX/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '20': 'https://www.instagram.com/p/C1cBcJqy_E0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '21': 'https://www.instagram.com/p/Cv4oT4Ch9kN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '22': 'https://www.instagram.com/p/Cs8jwSYhmfA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '23': 'https://www.instagram.com/p/CujogDLSqv-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '24': 'https://www.instagram.com/p/CzBcRrCyK2u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '25': 'https://www.instagram.com/p/ChNAIpXpEBR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '26': 'https://www.instagram.com/p/CrAnH7rSHn6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '27': 'https://www.instagram.com/p/CuHZNiCS2fu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '28': 'https://www.instagram.com/p/C0T4htSS_Hv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '29': 'https://www.instagram.com/p/C2CmVwdyKSw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+        '30': 'https://www.instagram.com/p/Cq7lbahyGfg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
         // Add more mappings for each directory number
     };
 
