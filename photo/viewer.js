@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Define the number of images for each directory
     const directoryImageCounts = {};
-    for (let i = 1; i <= 80; i++) {   //change this when adding more directories
+    for (let i = 1; i <= 81; i++) {   //change this when adding more directories
         directoryImageCounts[i] = 12;
     }
 
