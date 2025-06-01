@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     directoryTitle.textContent = `${selectedDirectory}`;
 
-    const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+    const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.heic'];
     const videoExtensions = ['.mp4', '.webm', '.mov'];
     const allExtensions = [...imageExtensions, ...videoExtensions];
     const imageCount = directoryImageCounts[selectedDirectory] || 0;
