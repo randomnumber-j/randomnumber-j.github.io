@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let directories = [];
 
     // Create directory cards
-    for (let i = 1; i <= 81; i++) {
+    for (let i = 1; i <= 85; i++) {
         directories.push({
             id: i,
             name: i.toString()
